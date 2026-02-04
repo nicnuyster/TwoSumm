@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 #print(os.getcwd())
 #from misc.Sortings import Sorts
-#import time
+import time
 
 class TSSolution():
 
@@ -33,10 +33,12 @@ class TSSolution():
 
         p1 = 0
         p2 = len(nums)-1
-        SortObj = Sorts()
+        #SortObj = Sorts()
 
         # My sort
-        nums = SortObj.quicksortMy(nums)
+        #nums = SortObj.quicksortMy(nums)
+
+        nums.sort()
 
         while p1 != p2:
             if nums[p1] + nums[p2] == target:
